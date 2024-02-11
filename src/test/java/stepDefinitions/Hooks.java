@@ -22,4 +22,10 @@ public class Hooks {
    	driver.get(p.getProperty("appURL"));
    	driver.manage().window().maximize();		
 	}
+	
+	private void sysout() {
+		// TODO Auto-generated method stub
+
+	}
 }
+
