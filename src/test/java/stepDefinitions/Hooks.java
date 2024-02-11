@@ -23,8 +23,4 @@ public class Hooks {
    	driver.manage().window().maximize();		
 	}
 	
-	private void sysout() {
-		// TODO Auto-generated method stub
-System.out.println("hooks");
-	}
 }
