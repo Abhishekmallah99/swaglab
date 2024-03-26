@@ -1,1 +1,5 @@
-hello
+ Scenario: Verify login with Invalid credentials
+    Given user is on the Sauce Demo login page
+    When user enters invalid username and/or password
+    And clicks on the "Login" button
+    Then an error message indicating invalid credentials should be displayed 
