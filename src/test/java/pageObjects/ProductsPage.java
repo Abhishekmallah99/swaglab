@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 
 public class ProductsPage extends BasePage {
