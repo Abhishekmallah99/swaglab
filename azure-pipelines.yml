@@ -1,0 +1,22 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- main
+
+schedules:
+- cron: "0 0 * * *"  # Schedule to run every day at midnight UTC (adjust as needed for your timezone)
+  displayName: DailyPipelineRun
+  branches:
+    include:
+    - master  # Include the branch you want to trigger the pipeline on
+
+pool:
+  vmImage: 'ubuntu-latest'  # Specify the VM image for the pipeline run
+
+steps:
+- script: |
+    echo "This is a daily pipeline run."
+  displayName: 'Run Daily Task'
